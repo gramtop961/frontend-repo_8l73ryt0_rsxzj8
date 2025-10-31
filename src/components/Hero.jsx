@@ -4,16 +4,16 @@ import { Rocket, Github, Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] w-full overflow-hidden rounded-2xl bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950">
-      {/* 3D Scene */}
-      <div className="absolute inset-0"> 
-        <Spline 
-          scene="https://prod.spline.design/8qf2dJZsJx6k1VqU/scene.splinecode" 
-          style={{ width: '100%', height: '100%' }} 
+    <section className="relative w-full min-h-[92vh] overflow-hidden">
+      {/* 3D Scene: full-bleed cover */}
+      <div className="absolute inset-0">
+        <Spline
+          scene="https://prod.spline.design/Qe6dlWJktclXcUBS/scene.splinecode"
+          style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      {/* Soft gradient overlay to improve text contrast (does not block interactions) */}
+      {/* Soft gradient overlay for contrast (does not block interactions) */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/30 to-slate-950/70" />
 
       {/* Content */}
@@ -25,8 +25,8 @@ const Hero = () => {
         <h1 className="mt-2 bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-5xl font-extrabold tracking-tight text-transparent sm:text-6xl">
           Developer Portfolio
         </h1>
-        <p className="mt-4 max-w-2xl text-balance text-base leading-7 text-slate-300 sm:text-lg">
-          Building immersive, performant web experiences with React, TypeScript, and modern tooling. Explore projects, motion experiments, and 3D scenes.
+        <p className="mt-4 max-w-2xl text-balance text-base leading-7 text-slate-200 sm:text-lg">
+          Modern React + Tailwind site with immersive 3D and smooth scroll-driven motion.
         </p>
 
         <div className="mt-8 flex items-center gap-3">
